@@ -33,23 +33,25 @@ public class Footsteps : MonoBehaviour
 
     private AudioClip GetClip()
     {
-        int terrainTextureIndex = terrain.GetActiveTerrainTextureIdx(transform.position);
+        int terrainTextureIndex = terrain.GetTerrainAtPosition(transform.position);
 
         switch (terrainTextureIndex)
         {
             case 0:
-                return dryGrassFootsteps;
-            case 1:
-                return grassFootsteps;
-            case 2:
-                return gravelFootsteps;
-            case 3:
                 return stoneFootsteps;
+            case 1:
+                return dryGrassFootsteps;
+            case 2:
+                return grassFootsteps;
+            case 3:
+                return gravelFootsteps;
             case 4:
-                return snowFootsteps;
+                return stoneFootsteps;
             case 5:
-                return waterFootsteps;
+                return snowFootsteps;
             case 6:
+                return waterFootsteps;
+            case 7:
                 return woodFootsteps;
             default:
                 return gravelFootsteps;
@@ -57,4 +59,6 @@ public class Footsteps : MonoBehaviour
         }
 
     }
+
+
 }

@@ -4,51 +4,54 @@ using UnityEngine;
 
 public class TerrainDetector : MonoBehaviour
 {
-    private TerrainData terrainData;
-    private int alphamapWidth;
-    private int alphamapHeight;
-    private float[,,] splatmapData;
-    private int numTextures;
+    public TerrainData mTerrainData;
+    public int alphamapWidth;
+    public int alphamapHeight;
 
-    private void Start()
+    public float[,,] mSplatmapData;
+    public int mNumTextures;
+
+    void Start()
     {
-        
-        terrainData = Terrain.activeTerrain.terrainData;
-        alphamapWidth = terrainData.alphamapWidth;
-        alphamapHeight = terrainData.alphamapHeight;
-
-        splatmapData = terrainData.GetAlphamaps(0, 0, alphamapWidth, alphamapHeight);
-        numTextures = splatmapData.Length / (alphamapWidth * alphamapHeight);
-        
+        GetTerrainProps();
     }
-    
 
-    private Vector3 ConvertToSplatMapCoordinate(Vector3 worldPosition)
+    private void GetTerrainProps()
     {
-        Vector3 splatPosition = new Vector3();
+        mTerrainData = Terrain.activeTerrain.terrainData;
+        alphamapWidth = mTerrainData.alphamapWidth;
+        alphamapHeight = mTerrainData.alphamapHeight;
+
+        mSplatmapData = mTerrainData.GetAlphamaps(0, 0, alphamapWidth, alphamapHeight);
+        mNumTextures = mSplatmapData.Length / (alphamapWidth * alphamapHeight);
+    }
+
+    private Vector3 ConvertToSplatMapCoordinate(Vector3 playerPos)
+    {
+        Vector3 vecRet = new Vector3();
         Terrain ter = Terrain.activeTerrain;
         Vector3 terPosition = ter.transform.position;
-        splatPosition.x = ((worldPosition.x - terPosition.x) / ter.terrainData.size.x) * ter.terrainData.alphamapWidth;
-        splatPosition.z = ((worldPosition.z - terPosition.z) / ter.terrainData.size.z) * ter.terrainData.alphamapHeight;
-        return splatPosition;
+        vecRet.x = ((playerPos.x - terPosition.x) / ter.terrainData.size.x) * ter.terrainData.alphamapWidth;
+        vecRet.z = ((playerPos.z - terPosition.z) / ter.terrainData.size.z) * ter.terrainData.alphamapHeight;
+        return vecRet;
     }
 
-    public int GetActiveTerrainTextureIdx(Vector3 position)
+    private int GetActiveTerrainTextureIdx(Vector3 pos)
     {
-        Vector3 terrainCord = ConvertToSplatMapCoordinate(position);
-        int activeTerrainIndex = 0;
-        float largestOpacity = 0f;
-
-        for (int i = 0; i < numTextures; i++)
+        Vector3 TerrainCord = ConvertToSplatMapCoordinate(pos);
+        int ret = 0;
+        float comp = 0f;
+        for (int i = 0; i < mNumTextures; i++)
         {
-            if (largestOpacity < splatmapData[(int)terrainCord.z, (int)terrainCord.x, i])
-            {
-                activeTerrainIndex = i;
-                largestOpacity = splatmapData[(int)terrainCord.z, (int)terrainCord.x, i];
-            }
+            if (comp < mSplatmapData[(int)TerrainCord.z, (int)TerrainCord.x, i])
+                ret = i;
         }
-
-        return activeTerrainIndex;
+        return ret;
     }
 
+    public int GetTerrainAtPosition(Vector3 pos)
+    {
+        int terrainIdx = GetActiveTerrainTextureIdx(pos);
+        return terrainIdx;
+    }
 }
