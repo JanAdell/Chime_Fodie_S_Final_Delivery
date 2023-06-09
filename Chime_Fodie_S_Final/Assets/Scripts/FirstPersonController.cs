@@ -74,6 +74,10 @@ namespace StarterAssets
 		public AudioSource woodFootsteps;
 		public TerrainDetector terrain;
 
+		//pickup system
+		[SerializeField] private bool triggerActive = false;
+		private int chimesCollected = 0;
+
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 		private PlayerInput _playerInput;
@@ -125,6 +129,7 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
+			Pickup();
 		}
 
 		private void LateUpdate()
@@ -291,6 +296,38 @@ namespace StarterAssets
 
 			}*/
 
+		}
+
+		public void OnTriggerEnter(Collider other)
+		{
+			if (other.CompareTag("Chime"))
+			{
+				triggerActive = true;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+		}
+		public void OnTriggerExit(Collider other)
+		{
+			if (other.CompareTag("Chime"))
+			{
+				triggerActive = false;
+				//text.SetActive(false);
+			}
+		}
+
+		private void Pickup()
+        {
+			if (triggerActive == true)
+			{
+				if (_input.pickup == true)
+				{
+					chimesCollected++;
+					Debug.Log(chimesCollected);
+					//SceneManager.LoadScene(0);
+					Debug.Log("Pressing select button");
+				}
+			}
 		}
 
 		private void JumpAndGravity()

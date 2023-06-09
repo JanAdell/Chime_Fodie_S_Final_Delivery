@@ -6,11 +6,12 @@ public class ChimeManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public int chimesCollected;
+    
     //public ChimeScript fireScript;
 
     void Start()
     {
-        
+        chimesCollected = 0;
     }
 
 

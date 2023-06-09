@@ -232,9 +232,9 @@
                     "name": "",
                     "id": "c5b128b2-2aaa-48a3-be03-985aebb80de6",
                     "path": "<Keyboard>/e",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
-                    "groups": "",
+                    "groups": "KeyboardMouse",
                     "action": "Pickup",
                     "isComposite": false,
                     "isPartOfComposite": false
