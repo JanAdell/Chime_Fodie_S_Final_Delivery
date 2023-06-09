@@ -320,6 +320,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 248155378}
+  - component: {fileID: 248155379}
   m_Layer: 0
   m_Name: ChimeManager
   m_TagString: Untagged
@@ -341,6 +342,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &248155379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248155377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf6c3b0e674d0ab4f9115fbdea7913ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chimesCollected: 0
+  chime1: {fileID: 0}
+  chime2: {fileID: 0}
+  chime3: {fileID: 0}
+  chime4: {fileID: 0}
+  chime5: {fileID: 0}
+  chime6: {fileID: 0}
+  chime7: {fileID: 0}
+  chime8: {fileID: 0}
+  chime9: {fileID: 0}
+  chime10: {fileID: 0}
 --- !u!1 &356427655
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,7 +762,7 @@ GameObject:
   - component: {fileID: 604205570}
   m_Layer: 0
   m_Name: collider
-  m_TagString: Untagged
+  m_TagString: Chime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -831,8 +855,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e390f390c95cf42a6f738707793a0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerActive: 0
-  pickup: 0
 --- !u!1 &704505969
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,6 +1635,10 @@ PrefabInstance:
       propertyPath: MoveSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 453084650579209848, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      propertyPath: chimeManager
+      value: 
+      objectReference: {fileID: 248155379}
     - target: {fileID: 453084650579209848, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: snowFootsteps
       value: 
@@ -3608,8 +3634,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e390f390c95cf42a6f738707793a0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerActive: 0
-  pickup: 0
 --- !u!1 &1903035091
 GameObject:
   m_ObjectHideFlags: 0

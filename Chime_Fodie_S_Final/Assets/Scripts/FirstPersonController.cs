@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 #endif
+
 
 namespace StarterAssets
 {
@@ -77,6 +79,7 @@ namespace StarterAssets
 		//pickup system
 		[SerializeField] private bool triggerActive = false;
 		private int chimesCollected = 0;
+		public ChimeManager chimeManager;
 
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -122,6 +125,8 @@ namespace StarterAssets
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
+
+			
 		}
 
 		private void Update()
@@ -212,7 +217,8 @@ namespace StarterAssets
 			// move the player
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 
-
+			
+			//Play footstep sound based on terrain
 			int terrainTextureIndex = terrain.GetTerrainAtPosition(transform.position);
 
 			if (terrainTextureIndex == 0 && _speed != 0)
@@ -264,38 +270,6 @@ namespace StarterAssets
 			else
 				stoneFootsteps.enabled = false;
 
-			/*switch (terrainTextureIndex)
-			{
-				case 0:
-					stoneFootsteps.enabled = true;
-					return;
-				case 1:
-					dryGrassFootsteps.enabled = true;
-					return;
-				case 2:
-					grassFootsteps.enabled = true;
-					return;
-				case 3:
-					gravelFootsteps.enabled = true;
-					return;
-				case 4:
-					stoneFootsteps.enabled = true;
-					return;
-				case 5:
-					snowFootsteps.enabled = true;
-					return;
-				case 6:
-					waterFootsteps.enabled = true;
-					return;
-				case 7:
-					woodFootsteps.enabled = true;
-					return;
-				default:
-					gravelFootsteps.enabled = true;
-					return;
-
-			}*/
-
 		}
 
 		public void OnTriggerEnter(Collider other)
@@ -322,7 +296,7 @@ namespace StarterAssets
 			{
 				if (_input.pickup == true)
 				{
-					chimesCollected++;
+					chimeManager.chimesCollected++;
 					Debug.Log(chimesCollected);
 					//SceneManager.LoadScene(0);
 					Debug.Log("Pressing select button");
