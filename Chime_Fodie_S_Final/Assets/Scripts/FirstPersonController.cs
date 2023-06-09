@@ -426,47 +426,47 @@ namespace StarterAssets
 			if (triggerActive2 == true && _input.pickup == true)
 			{
 				chimeManager.chime2 = true;
-				Debug.Log("Input chime 1");
+				Debug.Log("Input chime 2");
 			}
 			if (triggerActive3 == true && _input.pickup == true)
 			{
 				chimeManager.chime3 = true;
-				Debug.Log("Input chime 1");
+				Debug.Log("Input chime 3");
 			}
 			if (triggerActive4 == true && _input.pickup == true)
 			{
 				chimeManager.chime4 = true;
-				Debug.Log("Input chime 1");
+				Debug.Log("Input chime 4");
 			}
 			if (triggerActive5 == true && _input.pickup == true)
 			{
 				chimeManager.chime5 = true;
-				Debug.Log("Input chime 1");
+				Debug.Log("Input chime 5");
 			}
 			if (triggerActive6 == true && _input.pickup == true)
 			{
 				chimeManager.chime6 = true;
-				Debug.Log("Input chime 1");
+				Debug.Log("Input chime 6");
 			}
 			if (triggerActive7 == true && _input.pickup == true)
 			{
 				chimeManager.chime7 = true;
-				Debug.Log("Input chime 1");
+				Debug.Log("Input chime 7");
 			}
 			if (triggerActive8 == true && _input.pickup == true)
 			{
 				chimeManager.chime8 = true;
-				Debug.Log("Input chime 1");
+				Debug.Log("Input chime 8");
 			}
 			if (triggerActive9 == true && _input.pickup == true)
 			{
 				chimeManager.chime9 = true;
-				Debug.Log("Input chime 1");
+				Debug.Log("Input chime 9");
 			}
 			if (triggerActive10 == true && _input.pickup == true)
 			{
 				chimeManager.chime10 = true;
-				Debug.Log("Input chime 1");
+				Debug.Log("Input chime 10");
 			}
 		}
 

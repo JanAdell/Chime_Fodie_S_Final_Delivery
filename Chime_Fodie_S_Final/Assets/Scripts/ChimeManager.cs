@@ -9,7 +9,8 @@ using UnityEngine.InputSystem;
 public class ChimeManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public int chimesCollected;
+    //chimes
+    //public int chimesCollected;
     public bool chime1;
     public bool chime2;
     public bool chime3;
@@ -30,7 +31,10 @@ public class ChimeManager : MonoBehaviour
     public GameObject chime8Obj;
     public GameObject chime9Obj;
     public GameObject chime10Obj;
-    //private Keyboard keyboard;
+
+    //final bell
+    public bool finalBell;
+    public GameObject finalBellObj;
 
     //public ChimeScript fireScript;
 
@@ -47,83 +51,48 @@ public class ChimeManager : MonoBehaviour
         if (Keyboard.current.escapeKey.isPressed == true)
             Application.Quit();
 
-        Debug.Log(chimesCollected);
+        //Debug.Log(chimesCollected);
 
         if (chime1 == true)
-        {
-            chime1 = false;
             chime1Obj.SetActive(false);
-            chimesCollected++;
-            
-        }
 
         if (chime2 == true)
-        {
             chime2Obj.SetActive(false);
-            chimesCollected++;
-            chime2 = false;
-        }
 
         if (chime3 == true)
-        {
             chime3Obj.SetActive(false);
-            chimesCollected++;
-            chime3 = false;
-        }
 
         if (chime4 == true)
-        {
             chime4Obj.SetActive(false);
-            chimesCollected++;
-            chime4 = false;
-        }
 
         if (chime5 == true)
-        {
             chime5Obj.SetActive(false);
-            chimesCollected++;
-            chime5 = false;
-        }
 
         if (chime6 == true)
-        {
             chime6Obj.SetActive(false);
-            chimesCollected++;
-            chime6 = false;
-        }
-
+        
         if (chime7 == true)
-        {
             chime7Obj.SetActive(false);
-            chimesCollected++;
-            chime7 = false;
-        }
 
         if (chime8 == true)
-        {
             chime8Obj.SetActive(false);
-            chimesCollected++;
-            chime8 = false;
-        }
-
+             
         if (chime9 == true)
-        {
             chime9Obj.SetActive(false);
-            chimesCollected++;
-            chime9 = false;
-        }
-
+        
         if (chime10 == true)
-        {
             chime10Obj.SetActive(false);
-            chimesCollected++;
-            chime10 = false;
+
+
+        if (chime1 == true && chime2 == true && chime3 == true && chime4 == true && chime5 == true && chime6 == true && chime7 == true && chime8 == true && chime9 == true && chime10 == true)
+        {
+            //finalBellObj.SetActive(true);
+            //SceneManager.LoadScene(1);
+            Debug.Log("FINAL BELL SPAWNED");
         }
 
-        if (chimesCollected == 10)
-        {
+        //if(finalBell == true)
             //SceneManager.LoadScene(1);
-        }
 
     }
 }
