@@ -77,10 +77,24 @@ namespace StarterAssets
 		public TerrainDetector terrain;
 
 		//pickup system
-		[SerializeField] private bool triggerActive = false;
-		private int chimesCollected = 0;
+		//each trigger is a chime collider
+		private bool triggerActive1 = false;
+		private bool triggerActive2 = false;
+		private bool triggerActive3 = false;
+		private bool triggerActive4 = false;
+		private bool triggerActive5 = false;
+		private bool triggerActive6 = false;
+		private bool triggerActive7 = false;
+		private bool triggerActive8 = false;
+		private bool triggerActive9 = false;
+		private bool triggerActive10 = false;
+
+		//private int chimesCollected = 0;
 		public ChimeManager chimeManager;
 
+		//chimes --> Usually this would be held in a separate manager but i'm not familiar enough with the new input system to do so
+		//public Collider chimeC1;
+		
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 		private PlayerInput _playerInput;
@@ -219,6 +233,8 @@ namespace StarterAssets
 
 			
 			//Play footstep sound based on terrain
+			//Usually should be done with audioclip arrays and randomizing but this is easier and less time consuming, and also fits well considering we have bast
+			//spaces for the player to traverse
 			int terrainTextureIndex = terrain.GetTerrainAtPosition(transform.position);
 
 			if (terrainTextureIndex == 0 && _speed != 0)
@@ -272,35 +288,185 @@ namespace StarterAssets
 
 		}
 
+		//controlling all chime collisions from the FPScontroller is quite disgusting but we have no time to re-learn input and learn to comunicate between scripts properly
 		public void OnTriggerEnter(Collider other)
 		{
-			if (other.CompareTag("Chime"))
+			if (other.CompareTag("Chime1"))
 			{
-				triggerActive = true;
+				triggerActive1 = true;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime2"))
+			{
+				triggerActive2 = true;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime3"))
+			{
+				triggerActive3 = true;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime4"))
+			{
+				triggerActive4 = true;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime5"))
+			{
+				triggerActive5 = true;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime6"))
+			{
+				triggerActive6 = true;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime7"))
+			{
+				triggerActive7 = true;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime8"))
+			{
+				triggerActive8 = true;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime9"))
+			{
+				triggerActive9 = true;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime10"))
+			{
+				triggerActive10 = true;
 				//text.SetActive(true);
 				print("Collision detected");
 			}
 		}
 		public void OnTriggerExit(Collider other)
 		{
-			if (other.CompareTag("Chime"))
+			if (other.CompareTag("Chime1"))
 			{
-				triggerActive = false;
-				//text.SetActive(false);
+				triggerActive1 = false;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime2"))
+			{
+				triggerActive2 = false;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime3"))
+			{
+				triggerActive3 = false;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime4"))
+			{
+				triggerActive4 = false;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime5"))
+			{
+				triggerActive5 = false;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime6"))
+			{
+				triggerActive6 = false;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime7"))
+			{
+				triggerActive7 = false;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime8"))
+			{
+				triggerActive8 = false;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime9"))
+			{
+				triggerActive9 = false;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+			if (other.CompareTag("Chime10"))
+			{
+				triggerActive10 = false;
+				//text.SetActive(true);
+				print("Collision detected");
 			}
 		}
 
 		private void Pickup()
         {
-			if (triggerActive == true)
+			if (triggerActive1 == true && _input.pickup == true)
 			{
-				if (_input.pickup == true)
-				{
-					chimeManager.chimesCollected++;
-					Debug.Log(chimesCollected);
-					//SceneManager.LoadScene(0);
-					Debug.Log("Pressing select button");
-				}
+				chimeManager.chime1 = true;
+				Debug.Log("Input chime 1");						
+			}
+			if (triggerActive2 == true && _input.pickup == true)
+			{
+				chimeManager.chime2 = true;
+				Debug.Log("Input chime 1");
+			}
+			if (triggerActive3 == true && _input.pickup == true)
+			{
+				chimeManager.chime3 = true;
+				Debug.Log("Input chime 1");
+			}
+			if (triggerActive4 == true && _input.pickup == true)
+			{
+				chimeManager.chime4 = true;
+				Debug.Log("Input chime 1");
+			}
+			if (triggerActive5 == true && _input.pickup == true)
+			{
+				chimeManager.chime5 = true;
+				Debug.Log("Input chime 1");
+			}
+			if (triggerActive6 == true && _input.pickup == true)
+			{
+				chimeManager.chime6 = true;
+				Debug.Log("Input chime 1");
+			}
+			if (triggerActive7 == true && _input.pickup == true)
+			{
+				chimeManager.chime7 = true;
+				Debug.Log("Input chime 1");
+			}
+			if (triggerActive8 == true && _input.pickup == true)
+			{
+				chimeManager.chime8 = true;
+				Debug.Log("Input chime 1");
+			}
+			if (triggerActive9 == true && _input.pickup == true)
+			{
+				chimeManager.chime9 = true;
+				Debug.Log("Input chime 1");
+			}
+			if (triggerActive10 == true && _input.pickup == true)
+			{
+				chimeManager.chime10 = true;
+				Debug.Log("Input chime 1");
 			}
 		}
 

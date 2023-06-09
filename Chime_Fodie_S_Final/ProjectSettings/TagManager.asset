@@ -6,6 +6,16 @@ TagManager:
   tags:
   - CinemachineTarget
   - Chime
+  - Chime1
+  - Chime2
+  - Chime3
+  - Chime4
+  - Chime5
+  - Chime6
+  - Chime7
+  - Chime8
+  - Chime9
+  - Chime10
   layers:
   - Default
   - TransparentFX

@@ -43,12 +43,12 @@
                 },
                 {
                     "name": "Pickup",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "1e43b5a9-b3a6-491f-a1d4-0ba0f15676e2",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -232,7 +232,7 @@
                     "name": "",
                     "id": "c5b128b2-2aaa-48a3-be03-985aebb80de6",
                     "path": "<Keyboard>/e",
-                    "interactions": "Press(behavior=2)",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "KeyboardMouse",
                     "action": "Pickup",

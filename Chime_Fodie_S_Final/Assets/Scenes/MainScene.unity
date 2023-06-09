@@ -355,16 +355,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chimesCollected: 0
-  chime1: {fileID: 0}
-  chime2: {fileID: 0}
-  chime3: {fileID: 0}
-  chime4: {fileID: 0}
-  chime5: {fileID: 0}
-  chime6: {fileID: 0}
-  chime7: {fileID: 0}
-  chime8: {fileID: 0}
-  chime9: {fileID: 0}
-  chime10: {fileID: 0}
+  chime1: 0
+  chime2: 0
+  chime3: 0
+  chime4: 0
+  chime5: 0
+  chime6: 0
+  chime7: 0
+  chime8: 0
+  chime9: 0
+  chime10: 0
+  chime1Obj: {fileID: 1867508228}
+  chime2Obj: {fileID: 0}
+  chime3Obj: {fileID: 0}
+  chime4Obj: {fileID: 0}
+  chime5Obj: {fileID: 0}
+  chime6Obj: {fileID: 0}
+  chime7Obj: {fileID: 0}
+  chime8Obj: {fileID: 0}
+  chime9Obj: {fileID: 0}
+  chime10Obj: {fileID: 0}
 --- !u!1 &356427655
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,7 +614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &417030715
 Transform:
   m_ObjectHideFlags: 0
@@ -762,7 +772,7 @@ GameObject:
   - component: {fileID: 604205570}
   m_Layer: 0
   m_Name: collider
-  m_TagString: Chime
+  m_TagString: Chime1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3540,16 +3550,16 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 15
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0

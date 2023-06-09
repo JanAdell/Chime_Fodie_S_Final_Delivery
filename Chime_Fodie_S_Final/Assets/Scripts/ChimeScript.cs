@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChimeScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //this script will be used mainly for the chime's SFX control (delay) and showing the player the pickup related UI
     void Start()
     {
         
