@@ -64,7 +64,17 @@ namespace StarterAssets
 		private float _jumpTimeoutDelta;
 		private float _fallTimeoutDelta;
 
-	
+		//footsteps elements
+		public AudioSource gravelFootsteps;
+		public AudioSource snowFootsteps;
+		public AudioSource grassFootsteps;
+		public AudioSource dryGrassFootsteps;
+		public AudioSource stoneFootsteps;
+		public AudioSource waterFootsteps;
+		public AudioSource woodFootsteps;
+		public TerrainDetector terrain;
+
+
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 		private PlayerInput _playerInput;
 #endif
@@ -196,6 +206,91 @@ namespace StarterAssets
 
 			// move the player
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+
+
+			int terrainTextureIndex = terrain.GetTerrainAtPosition(transform.position);
+
+			if (terrainTextureIndex == 0 && _speed != 0)
+			{
+				stoneFootsteps.enabled = true;
+			}
+			else
+				stoneFootsteps.enabled = false;
+
+			if (terrainTextureIndex == 1 && _speed != 0)
+			{
+				dryGrassFootsteps.enabled = true;
+			}
+			else
+				dryGrassFootsteps.enabled = false;
+
+			if (terrainTextureIndex == 2 && _speed != 0)
+			{
+				grassFootsteps.enabled = true;
+			}
+			else
+				grassFootsteps.enabled = false;
+
+			if (terrainTextureIndex == 3 && _speed != 0)
+			{
+				gravelFootsteps.enabled = true;
+			}
+			else
+				gravelFootsteps.enabled = false;
+
+			if (terrainTextureIndex == 4 && _speed != 0)
+			{
+				stoneFootsteps.enabled = true;
+			}
+			else
+				stoneFootsteps.enabled = false;
+
+			if (terrainTextureIndex == 5 && _speed != 0)
+			{
+				stoneFootsteps.enabled = true;
+			}
+			else
+				stoneFootsteps.enabled = false;
+
+			if (terrainTextureIndex == 6 && _speed != 0)
+			{
+				stoneFootsteps.enabled = true;
+			}
+			else
+				stoneFootsteps.enabled = false;
+
+			/*switch (terrainTextureIndex)
+			{
+				case 0:
+					stoneFootsteps.enabled = true;
+					return;
+				case 1:
+					dryGrassFootsteps.enabled = true;
+					return;
+				case 2:
+					grassFootsteps.enabled = true;
+					return;
+				case 3:
+					gravelFootsteps.enabled = true;
+					return;
+				case 4:
+					stoneFootsteps.enabled = true;
+					return;
+				case 5:
+					snowFootsteps.enabled = true;
+					return;
+				case 6:
+					waterFootsteps.enabled = true;
+					return;
+				case 7:
+					woodFootsteps.enabled = true;
+					return;
+				default:
+					gravelFootsteps.enabled = true;
+					return;
+
+			}*/
+
 		}
 
 		private void JumpAndGravity()
