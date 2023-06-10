@@ -86,13 +86,13 @@ public class ChimeManager : MonoBehaviour
 
         if (chime1 == true && chime2 == true && chime3 == true && chime4 == true && chime5 == true && chime6 == true && chime7 == true && chime8 == true && chime9 == true && chime10 == true)
         {
-            //finalBellObj.SetActive(true);
+            finalBellObj.SetActive(true);
             //SceneManager.LoadScene(1);
             Debug.Log("FINAL BELL SPAWNED");
         }
 
-        //if(finalBell == true)
-            //SceneManager.LoadScene(1);
+        if(finalBell == true)
+            SceneManager.LoadScene(2);
 
     }
 }

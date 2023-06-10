@@ -92,8 +92,8 @@ namespace StarterAssets
 		//private int chimesCollected = 0;
 		public ChimeManager chimeManager;
 
-		//chimes --> Usually this would be held in a separate manager but i'm not familiar enough with the new input system to do so
-		//public Collider chimeC1;
+		//Final Bell
+		public bool triggerActiveBell = false;
 		
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -351,6 +351,12 @@ namespace StarterAssets
 				//text.SetActive(true);
 				print("Collision detected");
 			}
+			if (other.CompareTag("FinalBell"))
+			{
+				triggerActiveBell = true;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
 		}
 		public void OnTriggerExit(Collider other)
 		{
@@ -414,6 +420,13 @@ namespace StarterAssets
 				//text.SetActive(true);
 				print("Collision detected");
 			}
+			if (other.CompareTag("FinalBell"))
+			{
+				triggerActiveBell = false;
+				//text.SetActive(true);
+				print("Collision detected");
+			}
+
 		}
 
 		private void Pickup()
@@ -467,6 +480,11 @@ namespace StarterAssets
 			{
 				chimeManager.chime10 = true;
 				Debug.Log("Input chime 10");
+			}
+			if (triggerActiveBell == true && _input.pickup == true)
+			{
+				chimeManager.finalBell = true;
+				Debug.Log("Input Final Bell");
 			}
 		}
 

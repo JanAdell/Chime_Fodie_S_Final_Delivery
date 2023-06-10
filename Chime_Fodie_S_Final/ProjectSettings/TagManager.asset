@@ -16,6 +16,7 @@ TagManager:
   - Chime8
   - Chime9
   - Chime10
+  - FinalBell
   layers:
   - Default
   - TransparentFX
