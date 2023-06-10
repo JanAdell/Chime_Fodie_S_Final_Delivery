@@ -67,14 +67,17 @@ namespace StarterAssets
 		private float _fallTimeoutDelta;
 
 		//footsteps elements
-		public AudioSource gravelFootsteps;
-		public AudioSource snowFootsteps;
-		public AudioSource grassFootsteps;
-		public AudioSource dryGrassFootsteps;
-		public AudioSource stoneFootsteps;
-		public AudioSource waterFootsteps;
-		public AudioSource woodFootsteps;
+		[SerializeField] private AudioClip[] gravel;
+		[SerializeField] private AudioClip[] grass;
+		[SerializeField] private AudioClip[] dryGrass;
+		[SerializeField] private AudioClip[] snow;
+		[SerializeField] private AudioClip[] rock;
+		[SerializeField] private AudioClip[] water;
+		private AudioClip clip;
+		private AudioSource audioSource;
 		public TerrainDetector terrain;
+		private bool isMoving = false;
+		float distanceCovered;
 
 		//pickup system
 		//each trigger is a chime collider
@@ -124,6 +127,7 @@ namespace StarterAssets
 			{
 				_mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
 			}
+			audioSource = GetComponent<AudioSource>();
 		}
 
 		private void Start()
@@ -149,6 +153,17 @@ namespace StarterAssets
 			GroundedCheck();
 			Move();
 			Pickup();
+
+			if(isMoving == true)
+            {
+				distanceCovered += (_speed * Time.deltaTime) * 0.25f;
+				if(distanceCovered > 1)
+                {
+					clip = GetRandomClip();
+					audioSource.PlayOneShot(clip);
+					distanceCovered = 0;
+                }
+            }
 		}
 
 		private void LateUpdate()
@@ -190,11 +205,17 @@ namespace StarterAssets
 			// set target speed based on move speed, sprint speed and if sprint is pressed
 			float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 
+			
+
 			// a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 
 			// note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
 			// if there is no input, set the target speed to 0
-			if (_input.move == Vector2.zero) targetSpeed = 0.0f;
+			if (_input.move == Vector2.zero)
+			{
+				targetSpeed = 0.0f;
+				isMoving = false;
+			}
 
 			// a reference to the players current horizontal velocity
 			float currentHorizontalSpeed = new Vector3(_controller.velocity.x, 0.0f, _controller.velocity.z).magnitude;
@@ -226,65 +247,42 @@ namespace StarterAssets
 			{
 				// move
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
+				isMoving = true;
 			}
 
 			// move the player
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+		
 
-			
-			//Play footstep sound based on terrain
-			//Usually should be done with audioclip arrays and randomizing but this is easier and less time consuming, and also fits well considering we have bast
-			//spaces for the player to traverse
+		}
+
+		
+
+		private AudioClip GetRandomClip()
+		{
 			int terrainTextureIndex = terrain.GetTerrainAtPosition(transform.position);
+			Debug.Log("random clip got");
 
-			if (terrainTextureIndex == 0 && _speed != 0)
+			switch (terrainTextureIndex)
 			{
-				stoneFootsteps.enabled = true;
+				case 0:
+					return rock[UnityEngine.Random.Range(0, rock.Length)];
+				case 1:
+					return dryGrass[UnityEngine.Random.Range(0, dryGrass.Length)];
+				case 2:
+					return grass[UnityEngine.Random.Range(0, grass.Length)];
+				case 3:
+					return gravel[UnityEngine.Random.Range(0, gravel.Length)];
+				case 4:
+					return rock[UnityEngine.Random.Range(0, rock.Length)];
+				case 5:
+					return snow[UnityEngine.Random.Range(0, snow.Length)];
+				case 6:
+					return water[UnityEngine.Random.Range(0, water.Length)];
+				default:
+					return gravel[UnityEngine.Random.Range(0, gravel.Length)];
 			}
-			else
-				stoneFootsteps.enabled = false;
-
-			if (terrainTextureIndex == 1 && _speed != 0)
-			{
-				dryGrassFootsteps.enabled = true;
-			}
-			else
-				dryGrassFootsteps.enabled = false;
-
-			if (terrainTextureIndex == 2 && _speed != 0)
-			{
-				grassFootsteps.enabled = true;
-			}
-			else
-				grassFootsteps.enabled = false;
-
-			if (terrainTextureIndex == 3 && _speed != 0)
-			{
-				gravelFootsteps.enabled = true;
-			}
-			else
-				gravelFootsteps.enabled = false;
-
-			if (terrainTextureIndex == 4 && _speed != 0)
-			{
-				stoneFootsteps.enabled = true;
-			}
-			else
-				stoneFootsteps.enabled = false;
-
-			if (terrainTextureIndex == 5 && _speed != 0)
-			{
-				stoneFootsteps.enabled = true;
-			}
-			else
-				stoneFootsteps.enabled = false;
-
-			if (terrainTextureIndex == 6 && _speed != 0)
-			{
-				waterFootsteps.enabled = true;
-			}
-			else
-				waterFootsteps.enabled = false;
+			
 
 		}
 
