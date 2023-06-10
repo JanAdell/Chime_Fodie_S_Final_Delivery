@@ -15,11 +15,11 @@ C:/Users/adell/Documents/GitHub/Chime_Fodie_S_Final_Delivery/Chime_Fodie_S_Final
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52138
+58516
 Successfully changed project path to: C:/Users/adell/Documents/GitHub/Chime_Fodie_S_Final_Delivery/Chime_Fodie_S_Final
 C:/Users/adell/Documents/GitHub/Chime_Fodie_S_Final_Delivery/Chime_Fodie_S_Final
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 51.56 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 82.57 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.25f1 (9b9180224418)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/Resources/UnitySubsystems
@@ -35,587 +35,91 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56388
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56764
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002509 seconds.
+Registered in 0.003874 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 48.60 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 66.19 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.607 seconds
+- Completed reload, in  0.853 seconds
 Domain Reload Profiling:
-	ReloadAssembly (607ms)
-		BeginReloadAssembly (61ms)
+	ReloadAssembly (858ms)
+		BeginReloadAssembly (143ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (473ms)
-			LoadAssemblies (57ms)
+		EndReloadAssembly (623ms)
+			LoadAssemblies (140ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (152ms)
+			SetupTypeCache (220ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (182ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (233ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (49ms)
-				BeforeProcessingInitializeOnLoad (17ms)
-				ProcessInitializeOnLoadAttributes (83ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
+				RefreshPlugins (66ms)
+				BeforeProcessingInitializeOnLoad (20ms)
+				ProcessInitializeOnLoadAttributes (101ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006350 seconds.
+Registered in 0.010322 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-00000193E04F7040 doesn't match image C:\Users\adell\Documents\GitHub\Chime_Fodie_S_Final_Delivery\Chime_Fodie_S_Final\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-00000262FC196020 doesn't match image C:\Users\adell\Documents\GitHub\Chime_Fodie_S_Final_Delivery\Chime_Fodie_S_Final\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 60.42 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 97.06 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.383 seconds
+- Completed reload, in  1.819 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1384ms)
-		BeginReloadAssembly (167ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (1137ms)
-			LoadAssemblies (107ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (303ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (549ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (61ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (309ms)
-				ProcessInitializeOnLoadMethodAttributes (72ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2006 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.3 MB.
-System memory in use after: 102.3 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2463.
-Total: 3.423300 ms (FindLiveObjects: 0.184600 ms CreateObjectMapping: 0.079100 ms MarkObjects: 3.072800 ms  DeleteObjects: 0.085500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Simple Water Shader HDRP
-  artifactKey: Guid(98afd03b5128a594795ba878813a74c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Simple Water Shader HDRP using Guid(98afd03b5128a594795ba878813a74c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b13a503875f360175d5f5e3f682f81a') in 0.011207 seconds 
-  Import took 0.015494 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.279533 seconds.
-  path: Assets/Bitgem
-  artifactKey: Guid(fc020a62173d1e14c8be7449d9895ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bitgem using Guid(fc020a62173d1e14c8be7449d9895ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a37172537ce314ad72e1069e36ceb7b7') in 0.015901 seconds 
-  Import took 0.020206 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.124831 seconds.
-  path: Assets/Bitgem/StylisedWater
-  artifactKey: Guid(2b9b79ea3ff2b254a81810dfe4d4e1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bitgem/StylisedWater using Guid(2b9b79ea3ff2b254a81810dfe4d4e1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e1c5af175d1c19193851be2f91aa70') in 0.013133 seconds 
-  Import took 0.016383 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.734471 seconds.
-  path: Assets/Bitgem/StylisedWater/URP
-  artifactKey: Guid(eb6643021b4e8a4409d9d696ba20d711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bitgem/StylisedWater/URP using Guid(eb6643021b4e8a4409d9d696ba20d711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '615ea514d204e2bd12aa67b480101442') in 0.014589 seconds 
-  Import took 0.017822 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.624721 seconds.
-  path: Assets/HolyShift
-  artifactKey: Guid(ffad88167a4f007458bd21a4013c2345) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift using Guid(ffad88167a4f007458bd21a4013c2345) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feafc66802ff48f39393eb678654f8b6') in 0.012638 seconds 
-  Import took 0.015881 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.282402 seconds.
-  path: Assets/HolyShift/Materials
-  artifactKey: Guid(b680132c7555a450281862ca51648d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Materials using Guid(b680132c7555a450281862ca51648d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b38eec4d346b15736002a428c6c8b902') in 0.018292 seconds 
-  Import took 0.022927 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.033497 seconds.
-  path: Assets/HolyShift/Materials/LowPolyBase.mat
-  artifactKey: Guid(05a6462b5fca44df4b67ce7d40906d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Materials/LowPolyBase.mat using Guid(05a6462b5fca44df4b67ce7d40906d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd46244f8a2f7a7deb72c9bc55226048b') in 0.252389 seconds 
-  Import took 0.282338 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/HolyShift/Materials/LowPolyWater.mat
-  artifactKey: Guid(dba33a2bf8b23400bacf323fc2816a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Materials/LowPolyWater.mat using Guid(dba33a2bf8b23400bacf323fc2816a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e4d0ef8b9cf6ee11659ec440b276ca5') in 0.040422 seconds 
-  Import took 0.044267 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000546 seconds.
-  path: Assets/HolyShift/Materials/LowPolyDark.mat
-  artifactKey: Guid(88127c0a741fb41419f98cddb1aef10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Materials/LowPolyDark.mat using Guid(88127c0a741fb41419f98cddb1aef10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '936cc46ea4541793820c503cef70356f') in 0.041140 seconds 
-  Import took 0.046147 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.600716 seconds.
-  path: Assets/HolyShift/Textures/Distortion.png
-  artifactKey: Guid(b01980ff2ae464fadaac446f66f5558f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Textures/Distortion.png using Guid(b01980ff2ae464fadaac446f66f5558f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b5a27c900c534718dd6fe3b0ac7bb51') in 0.034108 seconds 
-  Import took 0.037229 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.109574 seconds.
-  path: Assets/HolyShift/Prefabs
-  artifactKey: Guid(748597e836b51436a8ef658ff8689cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Prefabs using Guid(748597e836b51436a8ef658ff8689cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90606f22556e5b3daf1a6d3398b3408a') in 0.020237 seconds 
-  Import took 0.024093 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.032068 seconds.
-  path: Assets/HolyShift/Prefabs/Water.prefab
-  artifactKey: Guid(bc4f23d04e42f4b559542ad840db6530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Prefabs/Water.prefab using Guid(bc4f23d04e42f4b559542ad840db6530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f2bfe2f6485436f9c6d28a97b5dde7d') in 0.019316 seconds 
-  Import took 0.045523 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006146 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-00000193E345B030 doesn't match image C:\Users\adell\Documents\GitHub\Chime_Fodie_S_Final_Delivery\Chime_Fodie_S_Final\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.512 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1513ms)
-		BeginReloadAssembly (133ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (1315ms)
-			LoadAssemblies (133ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (407ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (159ms)
-			SetupLoadedEditorAssemblies (435ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (90ms)
-				ProcessInitializeOnLoadAttributes (274ms)
-				ProcessInitializeOnLoadMethodAttributes (57ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1995 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.1 MB.
-System memory in use after: 105.2 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2507.
-Total: 2.728500 ms (FindLiveObjects: 0.165900 ms CreateObjectMapping: 0.080100 ms MarkObjects: 2.466800 ms  DeleteObjects: 0.014800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 358.242867 seconds.
-  path: Assets/HolyShift/Materials/LowPolyWater.mat
-  artifactKey: Guid(dba33a2bf8b23400bacf323fc2816a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Materials/LowPolyWater.mat using Guid(dba33a2bf8b23400bacf323fc2816a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aeed21ee219a282546db21ea217c006') in 0.114967 seconds 
-  Import took 0.120998 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 52.785045 seconds.
-  path: Assets/HolyShift/Textures
-  artifactKey: Guid(34ae26d41f9764a4296c3bd4f4f443a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Textures using Guid(34ae26d41f9764a4296c3bd4f4f443a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '599889b966522fbc10bf19d68462bbd1') in 0.018166 seconds 
-  Import took 0.021755 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.035182 seconds.
-  path: Assets/HolyShift/Textures/LowPolyBase.png
-  artifactKey: Guid(2274904fa1edb46fe906536981ebdeec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Textures/LowPolyBase.png using Guid(2274904fa1edb46fe906536981ebdeec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c0b8a38766bd0b9464c5854fea0fc8a') in 0.043009 seconds 
-  Import took 0.047925 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 34.166095 seconds.
-  path: Assets/Level Elements/Bell/textures/Bell_prop_None_Normal_LowAm.png
-  artifactKey: Guid(b359c0a58fdce704e8e361d025d5f5d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level Elements/Bell/textures/Bell_prop_None_Normal_LowAm.png using Guid(b359c0a58fdce704e8e361d025d5f5d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8bcdf358e0c94f3ed9204d0ef4ebff9') in 0.061267 seconds 
-  Import took 0.064815 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.817956 seconds.
-  path: Packages/com.unity.inputsystem/InputSystem/Editor/AssetEditor/Resources/blue.png
-  artifactKey: Guid(33f32142c2c2d4662be5f5274db27158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.inputsystem/InputSystem/Editor/AssetEditor/Resources/blue.png using Guid(33f32142c2c2d4662be5f5274db27158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aba7be40a4a76db69e54fb187f1eec1') in 0.040028 seconds 
-  Import took 0.052833 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.445402 seconds.
-  path: Packages/com.unity.inputsystem/InputSystem/Editor/AssetEditor/Resources/green.png
-  artifactKey: Guid(ffeba93637e654de6a5906b48520dc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.inputsystem/InputSystem/Editor/AssetEditor/Resources/green.png using Guid(ffeba93637e654de6a5906b48520dc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e4a57537de0debfe5eb90475998fb01') in 0.058045 seconds 
-  Import took 0.061840 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000074 seconds.
-  path: Packages/com.unity.inputsystem/InputSystem/Editor/AssetEditor/Resources/yellow.png
-  artifactKey: Guid(47cf506b4219343519083fe1c0b8fc9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.inputsystem/InputSystem/Editor/AssetEditor/Resources/yellow.png using Guid(47cf506b4219343519083fe1c0b8fc9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8dedd60847d349eca1e3a85d0abf4b4') in 0.097660 seconds 
-  Import took 0.103582 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Packages/com.unity.inputsystem/InputSystem/Editor/AssetEditor/Resources/pink.png
-  artifactKey: Guid(d7b144323984d4298924c65ed071dea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.inputsystem/InputSystem/Editor/AssetEditor/Resources/pink.png using Guid(d7b144323984d4298924c65ed071dea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bfe3a7b3232198c4cd59fca7e239f48') in 0.052652 seconds 
-  Import took 0.057224 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 32.316985 seconds.
-  path: Assets/HolyShift/Shaders
-  artifactKey: Guid(353b0be48cb734ef79518dec48d25d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Shaders using Guid(353b0be48cb734ef79518dec48d25d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0589b44b4c9892054a03e7b3dfe6acf4') in 0.013861 seconds 
-  Import took 0.019988 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.640065 seconds.
-  path: Assets/HolyShift/Scripts
-  artifactKey: Guid(4c40fc1454b2e4d5490c4df7d695a4f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Scripts using Guid(4c40fc1454b2e4d5490c4df7d695a4f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20f52d1fb98fcf702b72858307975b52') in 0.010418 seconds 
-  Import took 0.014048 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.319744 seconds.
-  path: Assets/HolyShift/Meshes
-  artifactKey: Guid(df423edd53348410d8fc693098fe3110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Meshes using Guid(df423edd53348410d8fc693098fe3110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff11b7b6c3cc97a288fe69f6782511d') in 0.010318 seconds 
-  Import took 0.013858 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.033912 seconds.
-  path: Assets/HolyShift/Meshes/GroundRollingStone.fbx
-  artifactKey: Guid(9d1427ad240df40799a197d044bb4cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Meshes/GroundRollingStone.fbx using Guid(9d1427ad240df40799a197d044bb4cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00459794b6a576930478b9d92f065f99') in 0.075180 seconds 
-  Import took 0.078762 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/HolyShift/Meshes/Mountain1.fbx
-  artifactKey: Guid(ed9ebaa8a9f8841d88aaa7d5e0551a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Meshes/Mountain1.fbx using Guid(ed9ebaa8a9f8841d88aaa7d5e0551a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebbd5be8b27f14ef1a86bab66418b4d3') in 0.031557 seconds 
-  Import took 0.034830 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.492688 seconds.
-  path: Assets/HolyShift/Meshes/Materials
-  artifactKey: Guid(47cb78373bcca48ed8952e540a228eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Meshes/Materials using Guid(47cb78373bcca48ed8952e540a228eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '111c5001f47861d06f3e661ddea38868') in 0.008323 seconds 
-  Import took 0.011735 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.480336 seconds.
-  path: Assets/HolyShift/Meshes/Materials/Rock.018.mat
-  artifactKey: Guid(41049c84597644bbda308165ca8d375a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Meshes/Materials/Rock.018.mat using Guid(41049c84597644bbda308165ca8d375a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '225891c98a9afee6501b1ff9745736c1') in 0.016110 seconds 
-  Import took 0.019455 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/HolyShift/Meshes/Materials/snow.003.mat
-  artifactKey: Guid(e1eb46555b85642bdbb15d59b97af543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Meshes/Materials/snow.003.mat using Guid(e1eb46555b85642bdbb15d59b97af543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb42c53094610714651afd4477014b79') in 0.021929 seconds 
-  Import took 0.026175 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 92.362846 seconds.
-  path: Assets/HolyShift/Materials/Send_Normals.png
-  artifactKey: Guid(533abab81cd8c324f9af01b47ad2d8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Materials/Send_Normals.png using Guid(533abab81cd8c324f9af01b47ad2d8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c088065c473b11c4b738ca376c448ca1') in 0.033207 seconds 
-  Import took 0.037353 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006701 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-00000193E0B5B030 doesn't match image C:\Users\adell\Documents\GitHub\Chime_Fodie_S_Final_Delivery\Chime_Fodie_S_Final\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.266 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1266ms)
-		BeginReloadAssembly (127ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1061ms)
-			LoadAssemblies (126ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (307ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (478ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (83ms)
-				ProcessInitializeOnLoadAttributes (309ms)
-				ProcessInitializeOnLoadMethodAttributes (66ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1995 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.3 MB.
-System memory in use after: 105.4 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2516.
-Total: 2.607100 ms (FindLiveObjects: 0.147900 ms CreateObjectMapping: 0.063300 ms MarkObjects: 2.380500 ms  DeleteObjects: 0.014700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 297.323909 seconds.
-  path: Assets/HolyShift/Materials/Foam_N.jpg
-  artifactKey: Guid(7be0b38719ed172448c241627120e982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Materials/Foam_N.jpg using Guid(7be0b38719ed172448c241627120e982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dc153cb9848d5e0e85ce600ea7ea80a') in 0.063413 seconds 
-  Import took 0.067897 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011375 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-00000193E856BED0 doesn't match image C:\Users\adell\Documents\GitHub\Chime_Fodie_S_Final_Delivery\Chime_Fodie_S_Final\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.235 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1236ms)
-		BeginReloadAssembly (146ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (15ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (1020ms)
-			LoadAssemblies (106ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (295ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (473ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (138ms)
-				ProcessInitializeOnLoadAttributes (262ms)
-				ProcessInitializeOnLoadMethodAttributes (60ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1995 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.3 MB.
-System memory in use after: 105.5 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2519.
-Total: 3.139800 ms (FindLiveObjects: 0.143400 ms CreateObjectMapping: 0.061800 ms MarkObjects: 2.917600 ms  DeleteObjects: 0.016000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 50.692183 seconds.
-  path: Assets/HolyShift/Materials/LowPolyWater.mat
-  artifactKey: Guid(dba33a2bf8b23400bacf323fc2816a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Materials/LowPolyWater.mat using Guid(dba33a2bf8b23400bacf323fc2816a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cbdfeb8af2d685fe5f8542b5471ed36') in 0.066422 seconds 
-  Import took 0.069474 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.795549 seconds.
-  path: Assets/HolyShift/Materials/Foam_N.jpg
-  artifactKey: Guid(7be0b38719ed172448c241627120e982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Materials/Foam_N.jpg using Guid(7be0b38719ed172448c241627120e982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94caa2bfe77d49cb318a401957e656fd') in 0.028234 seconds 
-  Import took 0.031744 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 280.095955 seconds.
-  path: Assets/Terrains/New Terrain 2.asset
-  artifactKey: Guid(715e286f636768641be83dedd866f208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrains/New Terrain 2.asset using Guid(715e286f636768641be83dedd866f208) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Rock_01 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
- -> (artifact id: '0c9e62111a740e54efb51b3afa7afc5b') in 0.049408 seconds 
-  Import took 0.054144 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007369 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001957F81C010 doesn't match image C:\Users\adell\Documents\GitHub\Chime_Fodie_S_Final_Delivery\Chime_Fodie_S_Final\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.288 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1288ms)
-		BeginReloadAssembly (145ms)
+	ReloadAssembly (1820ms)
+		BeginReloadAssembly (177ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (45ms)
-		EndReloadAssembly (1074ms)
-			LoadAssemblies (104ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (1570ms)
+			LoadAssemblies (119ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (288ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (495ms)
+			SetupTypeCache (440ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (767ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (91ms)
-				ProcessInitializeOnLoadAttributes (315ms)
-				ProcessInitializeOnLoadMethodAttributes (71ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (1ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (97ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (419ms)
+				ProcessInitializeOnLoadMethodAttributes (110ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1995 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.5 MB.
-System memory in use after: 105.7 MB.
+Unloading 2006 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.3 MB.
+System memory in use after: 102.4 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2523.
-Total: 2.863200 ms (FindLiveObjects: 0.270800 ms CreateObjectMapping: 0.091900 ms MarkObjects: 2.484900 ms  DeleteObjects: 0.015000 ms)
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2463.
+Total: 3.568400 ms (FindLiveObjects: 0.164500 ms CreateObjectMapping: 0.085900 ms MarkObjects: 3.183800 ms  DeleteObjects: 0.133200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -629,253 +133,234 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 186.395189 seconds.
-  path: Assets/Dogmage
-  artifactKey: Guid(6a359ae4b83d4414ea2f5d960ee874f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dogmage using Guid(6a359ae4b83d4414ea2f5d960ee874f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d2def71adc4d6d694635c07119291cf') in 0.017640 seconds 
-  Import took 0.022165 seconds .
+  path: Assets/TerrainSampleAssets/Textures/Terrain/NewLayer.terrainlayer
+  artifactKey: Guid(5b5dd617ec1fafc44a478dc25e46332a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Textures/Terrain/NewLayer.terrainlayer using Guid(5b5dd617ec1fafc44a478dc25e46332a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a3805b8b879fba19eec75037eaebf29') in 0.158455 seconds 
+  Import took 0.162741 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.307020 seconds.
-  path: Assets/Dogmage/alpha_gray.preset
-  artifactKey: Guid(c63e0a55edc576c4e930f59b7b7286af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dogmage/alpha_gray.preset using Guid(c63e0a55edc576c4e930f59b7b7286af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae117de7c0ae9ac14be888e5056f18b4') in 0.023905 seconds 
-  Import took 0.027435 seconds .
+  Time since last request: 106.192194 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(cf6ac8b1d60630e4fa43acdf660b8f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(cf6ac8b1d60630e4fa43acdf660b8f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd09c4a66f0ed0a2f7715e1a0c6df53c8') in 0.032861 seconds 
+  Import took 0.039339 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.763575 seconds.
-  path: Assets/Dogmage/Tilable Moss Textures
-  artifactKey: Guid(c278e7498b2aa6c47bdbbc811b187dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dogmage/Tilable Moss Textures using Guid(c278e7498b2aa6c47bdbbc811b187dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73d0ad942fbaa41ac9fb6c66343613a7') in 0.012273 seconds 
-  Import took 0.015429 seconds .
+  Time since last request: 1.951952 seconds.
+  path: Assets/Piloto Studio
+  artifactKey: Guid(b3b81f160ce722941bb97ed81954fb48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Piloto Studio using Guid(b3b81f160ce722941bb97ed81954fb48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f8821addc0f7fe63dde9e19fe49eb84') in 0.020535 seconds 
+  Import took 0.025158 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.537612 seconds.
-  path: Assets/Dogmage/Tilable Moss Textures/materials
-  artifactKey: Guid(eefe17cdd8d40644bb9f01c535342d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dogmage/Tilable Moss Textures/materials using Guid(eefe17cdd8d40644bb9f01c535342d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6987bea50c21a9836ced25745b3678dc') in 0.014670 seconds 
-  Import took 0.017772 seconds .
+  Time since last request: 2.897006 seconds.
+  path: Assets/Piloto Studio/Campfire And Torches Pack
+  artifactKey: Guid(3e7a9de039c1b4b4a9b9259957325570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Piloto Studio/Campfire And Torches Pack using Guid(3e7a9de039c1b4b4a9b9259957325570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8465af3928ed17616f5c3c506957047c') in 0.016057 seconds 
+  Import took 0.020401 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 92.319924 seconds.
-  path: Assets/Dogmage/Tilable Moss Textures/textures
-  artifactKey: Guid(5eb0e70131539b441956a3f83a8e69d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dogmage/Tilable Moss Textures/textures using Guid(5eb0e70131539b441956a3f83a8e69d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dab4c60ca84d58bac92488607ddc5686') in 0.018267 seconds 
-  Import took 0.023798 seconds .
+  Time since last request: 7.069337 seconds.
+  path: Assets/Footsteps - Essentials
+  artifactKey: Guid(7793132a9eafe7744a2d7ca6273b9902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Footsteps - Essentials using Guid(7793132a9eafe7744a2d7ca6273b9902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ac7881bb3d5a9999c0c2b647258a7a') in 0.039274 seconds 
+  Import took 0.043486 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.029566 seconds.
-  path: Assets/Dogmage/Tilable Moss Textures/textures/moss.png
-  artifactKey: Guid(a14452343663d7a43aa10c0273b09a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dogmage/Tilable Moss Textures/textures/moss.png using Guid(a14452343663d7a43aa10c0273b09a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2867973eae811027d07de7a48dabb0d4') in 0.057457 seconds 
-  Import took 0.061914 seconds .
+  Time since last request: 1.528434 seconds.
+  path: Assets/Hovl Studio
+  artifactKey: Guid(ca7c7206578d413479a329e5d65e3c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio using Guid(ca7c7206578d413479a329e5d65e3c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c13957edb9ef617931ecc5904fc0d6f8') in 0.019167 seconds 
+  Import took 0.023470 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/Dogmage/Tilable Moss Textures/textures/moss9.png
-  artifactKey: Guid(728309215cac9534ca3be4cffda837fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dogmage/Tilable Moss Textures/textures/moss9.png using Guid(728309215cac9534ca3be4cffda837fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '216f1f81f79d2a6d27bc9db8c30c5b3d') in 0.029248 seconds 
-  Import took 0.032447 seconds .
+  Time since last request: 2.056709 seconds.
+  path: Assets/Hovl Studio/Procedural fire
+  artifactKey: Guid(0126c6716a6407e4e8b91646ad5ade8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Procedural fire using Guid(0126c6716a6407e4e8b91646ad5ade8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2995d7cb2706a1fa12baed1a8935d2ea') in 0.029432 seconds 
+  Import took 0.033911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.581886 seconds.
+  path: Assets/Hovl Studio/Procedural fire/Materials
+  artifactKey: Guid(c109c1384274de146a494be626c64b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Procedural fire/Materials using Guid(c109c1384274de146a494be626c64b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e26c33d0bc809cc29944050f33049328') in 0.034567 seconds 
+  Import took 0.038054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.897108 seconds.
+  path: Assets/Hovl Studio/Procedural fire/Prefabs
+  artifactKey: Guid(6a69c24f54926f14cbc357dd8ae715a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Procedural fire/Prefabs using Guid(6a69c24f54926f14cbc357dd8ae715a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8aa4d7cc08503d1aa6419039e8b3f4e') in 0.014869 seconds 
+  Import took 0.018284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.038689 seconds.
+  path: Assets/Hovl Studio/Procedural fire/Prefabs/Explosion.prefab
+  artifactKey: Guid(67a684e320da6e7439421a07e3fa265c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Procedural fire/Prefabs/Explosion.prefab using Guid(67a684e320da6e7439421a07e3fa265c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71db7b7f8caad34d3b24d8b7df7b8f8f') in 0.248088 seconds 
+  Import took 0.251741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire 3.prefab
+  artifactKey: Guid(78e8b38d431ddef4fa2994a3f2d6e2ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire 3.prefab using Guid(78e8b38d431ddef4fa2994a3f2d6e2ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c75bbee9fb8db08af41f2c1d5edbad82') in 0.037642 seconds 
+  Import took 0.042024 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000166 seconds.
-  path: Assets/Dogmage/Tilable Moss Textures/textures/moss2.png
-  artifactKey: Guid(c56ebadf22e426e4d969bf4f49f4166b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dogmage/Tilable Moss Textures/textures/moss2.png using Guid(c56ebadf22e426e4d969bf4f49f4166b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a22b99aaf98298c2c54a9770ac0165b5') in 0.029721 seconds 
-  Import took 0.032555 seconds .
+  path: Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire pro orange.prefab
+  artifactKey: Guid(e55149ba6f4d00741984987e258c3378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire pro orange.prefab using Guid(e55149ba6f4d00741984987e258c3378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae5785d5aa7e962d7144e1a59526152e') in 0.036272 seconds 
+  Import took 0.040437 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000153 seconds.
-  path: Assets/Dogmage/Tilable Moss Textures/textures/moss_normalmap.png
-  artifactKey: Guid(509ada7021272f542b4d824501546536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dogmage/Tilable Moss Textures/textures/moss_normalmap.png using Guid(509ada7021272f542b4d824501546536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94bfc39e8189caa0197c4ca3617b161b') in 0.030867 seconds 
-  Import took 0.033773 seconds .
+  path: Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire pro yellow.prefab
+  artifactKey: Guid(52d340ed9c2714c4f8aabf1f82df1b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire pro yellow.prefab using Guid(52d340ed9c2714c4f8aabf1f82df1b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd77caa177e22ca4f389b7e8fc27bd65b') in 0.051429 seconds 
+  Import took 0.057457 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/Dogmage/Tilable Moss Textures/textures/moss7_alpha.png
-  artifactKey: Guid(6f7b1c758d0e2e1449bc428a8a49d967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dogmage/Tilable Moss Textures/textures/moss7_alpha.png using Guid(6f7b1c758d0e2e1449bc428a8a49d967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e4007999755de347671a71ef30d7a12') in 0.029637 seconds 
-  Import took 0.032340 seconds .
+  Time since last request: 0.000172 seconds.
+  path: Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire pro blue.prefab
+  artifactKey: Guid(c590b17884b119046bc6412066500b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire pro blue.prefab using Guid(c590b17884b119046bc6412066500b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f5d6ffe8531d3eb67f786dbd989abca') in 0.051014 seconds 
+  Import took 0.056935 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Dogmage/Tilable Moss Textures/textures/moss3.png
-  artifactKey: Guid(6461441eb01bdc3428a646811cf28485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dogmage/Tilable Moss Textures/textures/moss3.png using Guid(6461441eb01bdc3428a646811cf28485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e52ba8bb4e7b29457c0ddebc825f4360') in 0.028779 seconds 
-  Import took 0.031645 seconds .
+  Time since last request: 0.000162 seconds.
+  path: Assets/Hovl Studio/Procedural fire/Prefabs/RotatorPS2.prefab
+  artifactKey: Guid(26255240385821a4185c7163c7a7aec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Procedural fire/Prefabs/RotatorPS2.prefab using Guid(26255240385821a4185c7163c7a7aec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55f99474df5877456772cf1917dec502') in 0.044857 seconds 
+  Import took 0.052263 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/Dogmage/Tilable Moss Textures/textures/moss7.png
-  artifactKey: Guid(90b115f92e6804c41beb527ed6d78bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dogmage/Tilable Moss Textures/textures/moss7.png using Guid(90b115f92e6804c41beb527ed6d78bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6d78291eff6f24cdb4c1f20b287191') in 0.027372 seconds 
-  Import took 0.030299 seconds .
+  Time since last request: 0.000274 seconds.
+  path: Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire 0.prefab
+  artifactKey: Guid(08fd1b80cc24cc8439f45fda3c558255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire 0.prefab using Guid(08fd1b80cc24cc8439f45fda3c558255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e21ad73db0e46969d5d071267c482ef') in 0.035496 seconds 
+  Import took 0.041411 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/Dogmage/Tilable Moss Textures/textures/moss4.png
-  artifactKey: Guid(46238968b6b529c4ab08998bf38e4dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dogmage/Tilable Moss Textures/textures/moss4.png using Guid(46238968b6b529c4ab08998bf38e4dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f2dd22ddbcde4066b9f992d2a95fc72') in 0.036697 seconds 
-  Import took 0.040274 seconds .
+  Time since last request: 0.000052 seconds.
+  path: Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire pro green.prefab
+  artifactKey: Guid(3d35e81bdc5955041be098ef22e82a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire pro green.prefab using Guid(3d35e81bdc5955041be098ef22e82a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8607a1571ecf19df56e8ab20e89cae6b') in 0.032631 seconds 
+  Import took 0.036240 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/Dogmage/Tilable Moss Textures/textures/moss5.png
-  artifactKey: Guid(ba89fae508156084fac47f4f816a7b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dogmage/Tilable Moss Textures/textures/moss5.png using Guid(ba89fae508156084fac47f4f816a7b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddc59080d0d0c99f7dc62b24cdd40903') in 0.038668 seconds 
-  Import took 0.042569 seconds .
+  Time since last request: 0.000534 seconds.
+  path: Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire pro red.prefab
+  artifactKey: Guid(eca000ab44c908d4dab395f654753038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire pro red.prefab using Guid(eca000ab44c908d4dab395f654753038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52464a138013feb609f1acab3acdc5ec') in 0.039014 seconds 
+  Import took 0.042875 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/Dogmage/Tilable Moss Textures/textures/moss8.png
-  artifactKey: Guid(b4f38838485542645ba29601f525314f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dogmage/Tilable Moss Textures/textures/moss8.png using Guid(b4f38838485542645ba29601f525314f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd5417e8f5a9ec59676f999c7e0ebcb5') in 0.038414 seconds 
-  Import took 0.042418 seconds .
+  Time since last request: 0.000151 seconds.
+  path: Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire 2.prefab
+  artifactKey: Guid(529eb4216865eba419c1a4a68d0b0388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire 2.prefab using Guid(529eb4216865eba419c1a4a68d0b0388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84913acbe89e80c73993d7962c597e26') in 0.038014 seconds 
+  Import took 0.047883 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000458 seconds.
-  path: Assets/Dogmage/Tilable Moss Textures/textures/moss6.png
-  artifactKey: Guid(ac92f43f2155b0047ac936d9d8d82c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dogmage/Tilable Moss Textures/textures/moss6.png using Guid(ac92f43f2155b0047ac936d9d8d82c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9e8e9fb98d4762214a011fcffcecb24') in 0.058601 seconds 
-  Import took 0.072286 seconds .
+  Time since last request: 0.000160 seconds.
+  path: Assets/Hovl Studio/Procedural fire/Prefabs/RotatorPS1.prefab
+  artifactKey: Guid(1381b64ff1936ac4e80c3a00687081f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Procedural fire/Prefabs/RotatorPS1.prefab using Guid(1381b64ff1936ac4e80c3a00687081f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ddf61f9b9294492263c7229c6bb22fb') in 0.081463 seconds 
+  Import took 0.085553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire 1.prefab
+  artifactKey: Guid(25093a0593dc83043a7bc17ebba0e95d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Procedural fire/Prefabs/Magic fire 1.prefab using Guid(25093a0593dc83043a7bc17ebba0e95d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc2b8388921926e9152906465eb84132') in 0.049915 seconds 
+  Import took 0.053470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.340242 seconds.
+  path: Assets/Hovl Studio/Procedural fire/Materials/FireSphere1.mat
+  artifactKey: Guid(14fab0de6c54324468738e7b38a88207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Procedural fire/Materials/FireSphere1.mat using Guid(14fab0de6c54324468738e7b38a88207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c1d95e5c047cbadf363268d37176f03') in 0.067527 seconds 
+  Import took 0.072380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.784707 seconds.
+  path: Assets/Hovl Studio/Procedural fire/Textures/FireSphere1.png
+  artifactKey: Guid(31679c4b857f0d140bd9566b86eb8674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Procedural fire/Textures/FireSphere1.png using Guid(31679c4b857f0d140bd9566b86eb8674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f9eb0c678f1ec38ea0faac31f0abbe7') in 0.196349 seconds 
+  Import took 0.200430 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007644 seconds.
+Registered in 0.010079 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-00000193E37A6040 doesn't match image C:\Users\adell\Documents\GitHub\Chime_Fodie_S_Final_Delivery\Chime_Fodie_S_Final\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-00000262FC662020 doesn't match image C:\Users\adell\Documents\GitHub\Chime_Fodie_S_Final_Delivery\Chime_Fodie_S_Final\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.400 seconds
+- Completed reload, in  1.527 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1401ms)
-		BeginReloadAssembly (148ms)
+	ReloadAssembly (1527ms)
+		BeginReloadAssembly (134ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (1186ms)
-			LoadAssemblies (105ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (1315ms)
+			LoadAssemblies (139ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (323ms)
+			SetupTypeCache (344ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (69ms)
-			SetupLoadedEditorAssemblies (525ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (654ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (343ms)
-				ProcessInitializeOnLoadMethodAttributes (76ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
+				BeforeProcessingInitializeOnLoad (146ms)
+				ProcessInitializeOnLoadAttributes (359ms)
+				ProcessInitializeOnLoadMethodAttributes (133ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1995 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1996 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 105.6 MB.
 System memory in use after: 105.7 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2526.
-Total: 5.468100 ms (FindLiveObjects: 0.484300 ms CreateObjectMapping: 0.171400 ms MarkObjects: 4.784200 ms  DeleteObjects: 0.027000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 611.820981 seconds.
-  path: Assets/HolyShift/Materials/LowPolyWater.mat
-  artifactKey: Guid(dba33a2bf8b23400bacf323fc2816a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Materials/LowPolyWater.mat using Guid(dba33a2bf8b23400bacf323fc2816a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '762abfe894022a2070adba6d1005a130') in 0.078064 seconds 
-  Import took 0.083482 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000315 seconds.
-  path: Assets/HolyShift/Materials/Send_Normals.png
-  artifactKey: Guid(533abab81cd8c324f9af01b47ad2d8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HolyShift/Materials/Send_Normals.png using Guid(533abab81cd8c324f9af01b47ad2d8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb7fa0e5fb4516844207ad048a20b8d7') in 0.066585 seconds 
-  Import took 0.070569 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011769 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001957EC74020 doesn't match image C:\Users\adell\Documents\GitHub\Chime_Fodie_S_Final_Delivery\Chime_Fodie_S_Final\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.522 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1523ms)
-		BeginReloadAssembly (164ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (46ms)
-		EndReloadAssembly (1255ms)
-			LoadAssemblies (147ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (359ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (92ms)
-			SetupLoadedEditorAssemblies (539ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (77ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (285ms)
-				ProcessInitializeOnLoadMethodAttributes (76ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1995 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.6 MB.
-System memory in use after: 105.7 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2530.
-Total: 3.044400 ms (FindLiveObjects: 0.183300 ms CreateObjectMapping: 0.086400 ms MarkObjects: 2.756800 ms  DeleteObjects: 0.016800 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2510.
+Total: 3.222100 ms (FindLiveObjects: 0.182000 ms CreateObjectMapping: 0.085300 ms MarkObjects: 2.935300 ms  DeleteObjects: 0.018200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
