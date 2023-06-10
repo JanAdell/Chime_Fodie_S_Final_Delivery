@@ -281,10 +281,10 @@ namespace StarterAssets
 
 			if (terrainTextureIndex == 6 && _speed != 0)
 			{
-				stoneFootsteps.enabled = true;
+				waterFootsteps.enabled = true;
 			}
 			else
-				stoneFootsteps.enabled = false;
+				waterFootsteps.enabled = false;
 
 		}
 
