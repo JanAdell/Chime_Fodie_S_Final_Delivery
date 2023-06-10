@@ -73,6 +73,7 @@ namespace StarterAssets
 		[SerializeField] private AudioClip[] snow;
 		[SerializeField] private AudioClip[] rock;
 		[SerializeField] private AudioClip[] water;
+		[SerializeField] private AudioClip[] wood;
 		private AudioClip clip;
 		private AudioSource audioSource;
 		public TerrainDetector terrain;
@@ -279,6 +280,8 @@ namespace StarterAssets
 					return snow[UnityEngine.Random.Range(0, snow.Length)];
 				case 6:
 					return water[UnityEngine.Random.Range(0, water.Length)];
+				case 7:
+					return wood[UnityEngine.Random.Range(0, wood.Length)];
 				default:
 					return gravel[UnityEngine.Random.Range(0, gravel.Length)];
 			}
