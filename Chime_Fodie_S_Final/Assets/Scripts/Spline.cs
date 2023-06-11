@@ -28,7 +28,7 @@ public class Spline : MonoBehaviour
         {
             for (int i = 0; i < splineCount; i++)
             {
-                Debug.DrawLine(splinePoint[i], splinePoint[i + 1], Color.red);
+                //Debug.DrawLine(splinePoint[i], splinePoint[i + 1], Color.red);
             }
         }
     }

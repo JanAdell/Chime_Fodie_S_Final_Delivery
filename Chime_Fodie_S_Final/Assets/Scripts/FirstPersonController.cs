@@ -92,6 +92,7 @@ namespace StarterAssets
 		private bool triggerActive8 = false;
 		private bool triggerActive9 = false;
 		private bool triggerActive10 = false;
+		public GameObject text;
 
 		//private int chimesCollected = 0;
 		public ChimeManager chimeManager;
@@ -157,7 +158,7 @@ namespace StarterAssets
 
 			if(isMoving == true)
             {
-				distanceCovered += (_speed * Time.deltaTime) * 0.25f;
+				distanceCovered += (_speed * Time.deltaTime) * 0.2f;
 				if(distanceCovered > 1)
                 {
 					clip = GetRandomClip();
@@ -262,7 +263,7 @@ namespace StarterAssets
 		private AudioClip GetRandomClip()
 		{
 			int terrainTextureIndex = terrain.GetTerrainAtPosition(transform.position);
-			Debug.Log("random clip got");
+			//Debug.Log("random clip got");
 
 			switch (terrainTextureIndex)
 			{
@@ -295,67 +296,67 @@ namespace StarterAssets
 			if (other.CompareTag("Chime1"))
 			{
 				triggerActive1 = true;
-				//text.SetActive(true);
+				text.SetActive(true);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime2"))
 			{
 				triggerActive2 = true;
-				//text.SetActive(true);
+				text.SetActive(true);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime3"))
 			{
 				triggerActive3 = true;
-				//text.SetActive(true);
+				text.SetActive(true);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime4"))
 			{
 				triggerActive4 = true;
-				//text.SetActive(true);
+				text.SetActive(true);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime5"))
 			{
 				triggerActive5 = true;
-				//text.SetActive(true);
+				text.SetActive(true);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime6"))
 			{
 				triggerActive6 = true;
-				//text.SetActive(true);
+				text.SetActive(true);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime7"))
 			{
 				triggerActive7 = true;
-				//text.SetActive(true);
+				text.SetActive(true);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime8"))
 			{
 				triggerActive8 = true;
-				//text.SetActive(true);
+				text.SetActive(true);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime9"))
 			{
 				triggerActive9 = true;
-				//text.SetActive(true);
+				text.SetActive(true);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime10"))
 			{
 				triggerActive10 = true;
-				//text.SetActive(true);
+				text.SetActive(true);
 				print("Collision detected");
 			}
 			if (other.CompareTag("FinalBell"))
 			{
 				triggerActiveBell = true;
-				//text.SetActive(true);
+				text.SetActive(true);
 				print("Collision detected");
 			}
 		}
@@ -364,67 +365,67 @@ namespace StarterAssets
 			if (other.CompareTag("Chime1"))
 			{
 				triggerActive1 = false;
-				//text.SetActive(true);
+				text.SetActive(false);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime2"))
 			{
 				triggerActive2 = false;
-				//text.SetActive(true);
+				text.SetActive(false);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime3"))
 			{
 				triggerActive3 = false;
-				//text.SetActive(true);
+				text.SetActive(false);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime4"))
 			{
 				triggerActive4 = false;
-				//text.SetActive(true);
+				text.SetActive(false);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime5"))
 			{
 				triggerActive5 = false;
-				//text.SetActive(true);
+				text.SetActive(false);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime6"))
 			{
 				triggerActive6 = false;
-				//text.SetActive(true);
+				text.SetActive(false);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime7"))
 			{
 				triggerActive7 = false;
-				//text.SetActive(true);
+				text.SetActive(false);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime8"))
 			{
 				triggerActive8 = false;
-				//text.SetActive(true);
+				text.SetActive(false);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime9"))
 			{
 				triggerActive9 = false;
-				//text.SetActive(true);
+				text.SetActive(false);
 				print("Collision detected");
 			}
 			if (other.CompareTag("Chime10"))
 			{
 				triggerActive10 = false;
-				//text.SetActive(true);
+				text.SetActive(false);
 				print("Collision detected");
 			}
 			if (other.CompareTag("FinalBell"))
 			{
 				triggerActiveBell = false;
-				//text.SetActive(true);
+				text.SetActive(false);
 				print("Collision detected");
 			}
 
@@ -435,56 +436,67 @@ namespace StarterAssets
 			if (triggerActive1 == true && _input.pickup == true)
 			{
 				chimeManager.chime1 = true;
+				text.SetActive(false);
 				Debug.Log("Input chime 1");						
 			}
 			if (triggerActive2 == true && _input.pickup == true)
 			{
 				chimeManager.chime2 = true;
+				text.SetActive(false);
 				Debug.Log("Input chime 2");
 			}
 			if (triggerActive3 == true && _input.pickup == true)
 			{
 				chimeManager.chime3 = true;
+				text.SetActive(false);
 				Debug.Log("Input chime 3");
 			}
 			if (triggerActive4 == true && _input.pickup == true)
 			{
 				chimeManager.chime4 = true;
+				text.SetActive(false);
 				Debug.Log("Input chime 4");
 			}
 			if (triggerActive5 == true && _input.pickup == true)
 			{
 				chimeManager.chime5 = true;
+				text.SetActive(false);
 				Debug.Log("Input chime 5");
 			}
 			if (triggerActive6 == true && _input.pickup == true)
 			{
 				chimeManager.chime6 = true;
+				text.SetActive(false);
 				Debug.Log("Input chime 6");
 			}
 			if (triggerActive7 == true && _input.pickup == true)
 			{
 				chimeManager.chime7 = true;
+				text.SetActive(false);
 				Debug.Log("Input chime 7");
 			}
 			if (triggerActive8 == true && _input.pickup == true)
 			{
 				chimeManager.chime8 = true;
+				text.SetActive(false);
 				Debug.Log("Input chime 8");
 			}
 			if (triggerActive9 == true && _input.pickup == true)
 			{
 				chimeManager.chime9 = true;
+				text.SetActive(false);
 				Debug.Log("Input chime 9");
 			}
 			if (triggerActive10 == true && _input.pickup == true)
 			{
 				chimeManager.chime10 = true;
+				text.SetActive(false);
 				Debug.Log("Input chime 10");
 			}
 			if (triggerActiveBell == true && _input.pickup == true)
 			{
 				chimeManager.finalBell = true;
+				text.SetActive(false);
 				Debug.Log("Input Final Bell");
 			}
 		}

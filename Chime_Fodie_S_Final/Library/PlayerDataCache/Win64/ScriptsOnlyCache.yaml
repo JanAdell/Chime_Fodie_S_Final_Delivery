@@ -1,13 +1,11 @@
 ScriptsOnlyBuild:
   usedScripts:
-    Assembly-CSharp-Editor.dll:
-    - ReadmeEditor
     Assembly-CSharp.dll:
     - BasicRigidBodyPush
     - ChimeManager
     - ChimeScript
     - EndtoMain
-    - Readme
+    - MaintoGame
     - Spline
     - SplineMover
     - StarterAssets.FirstPersonController
@@ -35,8 +33,6 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
-    - UnityEngine.EventSystems.EventSystem
-    - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -114,14 +110,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1460}
     - Class: 114
       Script: {instanceID: 1462}
     - Class: 114
@@ -129,11 +121,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2572}
     - Class: 114
-      Script: {instanceID: 3178}
-    - Class: 114
       Script: {instanceID: 5226}
     - Class: 114
-      Script: {instanceID: 5464}
+      Script: {instanceID: 5326}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -190,6 +180,8 @@ ScriptsOnlyBuild:
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
