@@ -1,5 +1,12 @@
 # Chime_Fodie_S_Final_Delivery
-Repository dedicated to holding the final delivery code, project and release of the FodieS subject at CITM, UPC. 
+Repository dedicated to holding the final delivery code, project and release of the FodieS subject's final evaluation at CITM, UPC. 
+
+By Jan Adell Mill
+
+## Controls
+* Move the character with the WASD Keys
+* Move the camera with your mouse
+* Pickup chimes with E
 
 # Credits
 * Wind chimes model made by Wyatt_wang
