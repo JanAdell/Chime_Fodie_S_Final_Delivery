@@ -40,6 +40,10 @@ public class ChimeManager : MonoBehaviour
     [SerializeField] int fieldCount = 0;
     [SerializeField] int totalCount = 0;
 
+    public GameObject canvasField;
+    public GameObject canvasForest;
+    public GameObject canvasTotal;
+
     private int uiChime1 = 0;
     private int uiChime2 = 0;
     private int uiChime3 = 0;
@@ -152,12 +156,23 @@ public class ChimeManager : MonoBehaviour
     
     private void UpdateHUD()
     {
+        
+        if(totalCount == 1)
+        {
+            canvasField.SetActive(true);
+            canvasForest.SetActive(true);
+            canvasTotal.SetActive(true);
+        }
+        
         forestCount = uiChime1 + uiChime7 + uiChime9;
         fieldCount = uiChime3 + uiChime4 + uiChime5 + uiChime6 + uiChime8;
         totalCount = uiChime1 + uiChime2 + uiChime3 + uiChime4 + uiChime5 + uiChime6 + uiChime7 + uiChime8 + uiChime9 + uiChime10;
         forestText.text = forestCount.ToString();
         fieldText.text = fieldCount.ToString();
         totalText.text = totalCount.ToString();
+
+
+
     }
 
 }
