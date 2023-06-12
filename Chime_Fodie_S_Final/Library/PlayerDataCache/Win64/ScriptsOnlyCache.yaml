@@ -1263,4 +1263,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/MainScene.unity
   - Assets/Scenes/Ending.unity
-  playerPath: C:/Users/adell/Desktop/Chime_v1.5.1/Chime_Fodie_S_Final.exe
+  playerPath: C:/Users/adell/Desktop/Chime_v1.5.2/Chime_Fodie_S_Final.exe

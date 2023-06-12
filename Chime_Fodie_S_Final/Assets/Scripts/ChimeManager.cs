@@ -149,7 +149,7 @@ public class ChimeManager : MonoBehaviour
             Debug.Log("FINAL BELL SPAWNED");
         }
 
-        if(finalBell == true)
+        if(finalBell == true && Keyboard.current.eKey.isPressed==true)
             SceneManager.LoadScene(2);
 
     }

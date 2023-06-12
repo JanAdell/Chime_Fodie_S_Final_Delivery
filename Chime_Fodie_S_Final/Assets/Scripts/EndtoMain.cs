@@ -17,7 +17,7 @@ public class EndtoMain : MonoBehaviour
         if (Keyboard.current.escapeKey.isPressed == true)
             Application.Quit();
 
-        if (Keyboard.current.anyKey.isPressed == true)
+        if (Keyboard.current.enterKey.isPressed == true)
             SceneManager.LoadScene(0);
     }
 }

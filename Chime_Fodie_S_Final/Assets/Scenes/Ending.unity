@@ -514,7 +514,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Press Any button to go back to the main menu, or ESC to exit.
+  m_Text: Press Enter to restart, or ESC to exit.
 --- !u!222 &1124161632
 CanvasRenderer:
   m_ObjectHideFlags: 0
