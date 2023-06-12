@@ -72,7 +72,7 @@ public class ChimeManager : MonoBehaviour
 
     void Start()
     {
-        //Cursor.visible = false;
+        Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
         
     }
@@ -93,7 +93,7 @@ public class ChimeManager : MonoBehaviour
         {
             chime1Obj.SetActive(false);
             uiChime1 = 1;
-            chime1 = false;
+            //chime1 = false;
         }
 
         if (chime2 == true)
