@@ -7,6 +7,7 @@ By Jan Adell Mill
 * Move the character with the WASD Keys
 * Move the camera with your mouse
 * Pickup chimes with E
+* Quit the game at any point with ESC
 
 # Credits
 * Wind chimes model made by Wyatt_wang
